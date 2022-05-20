@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start" defaultHref="/tabs/deaths">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ death?.death }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="unfavoriteepisode()" *ngIf="isFavorite">
+        <ion-icon name="star" slot="icon-only" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button (click)="favoriteepisode()" *ngIf="!isFavorite">
+        <ion-icon name="star-outline" slot="icon-only" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-card *ngIf="death" class="movie-card">
+    
+    <ion-item >
+      <ion-icon name="id-card-outline" slot="start"></ion-icon>
+      DEath: {{ death.death }} Death: {{ death.death_id }}
+    </ion-item>
+    <ion-item >
+      <ion-icon name="skull-outline" slot="start"></ion-icon>
+      Cause: {{ death.cause }}
+      </ion-item>
+      <ion-item >
+        <ion-icon name="skull-outline" slot="start"></ion-icon>
+        Responsible: {{ death.responsible }}
+        </ion-item>
+        <ion-item >
+          <ion-icon name="skull-outline" slot="start"></ion-icon>
+          Last Words: {{ death.last_words }}
+          </ion-item>
+          <ion-item >
+            <ion-icon name="skull-outline" slot="start"></ion-icon>
+            Season: {{ death.season }}
+            </ion-item>
+            <ion-item >
+              <ion-icon name="skull-outline" slot="start"></ion-icon>
+              Episode: {{ death.episode }}
+              </ion-item>
+              <ion-item >
+                <ion-icon name="skull-outline" slot="start"></ion-icon>
+                Number of deaths: {{ death.number_of_deaths }}
+                </ion-item>
+  </ion-card>
+</ion-content>
