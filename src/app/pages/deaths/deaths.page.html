@@ -3,7 +3,6 @@
     <ion-title>Deaths</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
     <ion-list>
         <ion-item button detail color="dark" lines="inset" *ngFor="let death of deaths | async" (click)="openDetails(death)">
