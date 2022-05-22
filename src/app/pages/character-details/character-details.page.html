@@ -1,32 +1,32 @@
 <ion-header>
-  <ion-toolbar color="dark">
-    <ion-buttons slot="start" defaultHref="/tabs/characters">
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start" defaultHref="/tabs/characters" >
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>{{ character?.title }}</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="unfavoriteepisode()" *ngIf="isFavorite">
-        <ion-icon name="star" slot="icon-only" color="dark"></ion-icon>
+        <ion-icon name="star" slot="icon-only" color="warning"></ion-icon>
       </ion-button>
       <ion-button (click)="favoriteepisode()" *ngIf="!isFavorite">
-        <ion-icon name="star-outline" slot="icon-only" color="dark"></ion-icon>
+        <ion-icon name="star-outline" slot="icon-only" color="warning"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content padding>
-  <ion-card *ngIf="character" class="movie-card">
-    
-    <ion-item >
-      <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+<ion-content>
+  <ion-card *ngIf="character" class="movie-card" color="dark">
+  
+    <ion-item color="dark">
+      <ion-icon name="information-circle-outline" slot="start" color="warning"></ion-icon>
       Name: {{ character.name }} Character: {{ character.character_id }}
     </ion-item>
-    <ion-item >
-      <ion-icon name="calendar" slot="start"></ion-icon>
+    <ion-item color="dark">
+      <ion-icon name="calendar" slot="start" color="warning"></ion-icon>
       Birthday: {{ character.birthday }}
     </ion-item>
-    <ion-item>
-      <ion-icon name="laptop-outline" slot = "start"></ion-icon>
+    <ion-item color="dark">
+      <ion-icon name="laptop-outline" slot = "start" color = "warning"></ion-icon>
       Occupation: {{character.occupation}}
       </ion-item>
      

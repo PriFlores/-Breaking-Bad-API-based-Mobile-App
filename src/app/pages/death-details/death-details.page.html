@@ -6,10 +6,10 @@
     <ion-title>{{ death?.death }}</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="unfavoriteepisode()" *ngIf="isFavorite">
-        <ion-icon name="star" slot="icon-only" color="dark"></ion-icon>
+        <ion-icon name="star" slot="icon-only"></ion-icon>
       </ion-button>
       <ion-button (click)="favoriteepisode()" *ngIf="!isFavorite">
-        <ion-icon name="star-outline" slot="icon-only" color="dark"></ion-icon>
+        <ion-icon name="star-outline" slot="icon-only" class="movie-card"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
