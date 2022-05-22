@@ -14,13 +14,14 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-content color="dark">
   <ion-card *ngIf="character" class="movie-card" color="dark">
   
     <ion-item color="dark">
       <ion-icon name="information-circle-outline" slot="start" color="warning"></ion-icon>
       Name: {{ character.name }} Character: {{ character.character_id }}
-    </ion-item>
+    </ion-item><ion-icon name="information-circle-outline" slot="start" color="warning"></ion-icon>
+    <img src= "{{ character.img }}" height="700" margin-top="10%" style="float:right"> 
     <ion-item color="dark">
       <ion-icon name="calendar" slot="start" color="warning"></ion-icon>
       Birthday: {{ character.birthday }}
@@ -28,8 +29,20 @@
     <ion-item color="dark">
       <ion-icon name="laptop-outline" slot = "start" color = "warning"></ion-icon>
       Occupation: {{character.occupation}}
+      </ion-item> 
+      <ion-item color="dark">
+        <ion-icon name="information-circle-outline" slot="start" color="warning"></ion-icon>
+        Status: {{ character.status }} 
       </ion-item>
-     
+      <ion-item color="dark">
+        <ion-icon name="information-circle-outline" slot="start" color="warning"></ion-icon>
+        Nickname: {{ character.nickname }} 
+      </ion-item>
+  <ion-item color="dark">
+    <ion-icon name="information-circle-outline" slot="start" color="warning"></ion-icon>
+    Season appearance: {{ character.appearance }}  
+  </ion-item>
+    
   </ion-card>
 </ion-content>
   
