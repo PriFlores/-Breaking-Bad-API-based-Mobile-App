@@ -4,8 +4,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="dark">
-    <ion-list color="dark">
+<ion-content >
+    <ion-list >
         <ion-item button detail lines="inset" color="dark" *ngFor="let episode of episodes | async" (click)="openDetails(episode)">
         {{ episode?.title }}
         </ion-item>

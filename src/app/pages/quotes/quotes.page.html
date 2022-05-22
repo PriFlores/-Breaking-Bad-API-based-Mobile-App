@@ -5,8 +5,8 @@
 </ion-header>
 
 <ion-content>
-    <ion-list color="dark">
-        <ion-item button detail lines="inset" *ngFor="let quote of quotes | async" (click)="openDetails(quote)">
+    <ion-list>
+        <ion-item button detail lines="inset" color="dark" *ngFor="let quote of quotes | async" (click)="openDetails(quote)">
         {{ quote?.author }}
         </ion-item>
     </ion-list>
