@@ -16,32 +16,33 @@
 </ion-header>
 <ion-content color="dark">
   <ion-card *ngIf="death" class="movie-card">
+    
     <ion-item color="dark">
-      <ion-icon name="id-card-outline" slot="start"></ion-icon>
+      <ion-icon name="skull-outline" slot="start" color="warning"></ion-icon>
       Death: {{ death.death }} Death: {{ death.death_id }}
     </ion-item>
     <ion-item color="dark" >
-      <ion-icon name="skull-outline" slot="start"></ion-icon>
+      <ion-icon name="pulse-outline" slot="start" color="warning"></ion-icon>
       Cause: {{ death.cause }}
       </ion-item>
       <ion-item color="dark">
-        <ion-icon name="skull-outline" slot="start"></ion-icon>
+        <ion-icon name="sad-outline" slot="start" color="warning"></ion-icon>
         Responsible: {{ death.responsible }}
         </ion-item>
         <ion-item color="dark">
-          <ion-icon name="skull-outline" slot="start"></ion-icon>
+          <ion-icon name="ear-outline" slot="start" color="warning"></ion-icon>
           Last Words: {{ death.last_words }}
           </ion-item>
           <ion-item color="dark">
-            <ion-icon name="skull-outline" slot="start"></ion-icon>
+            <ion-icon name="film-outline" slot="start" color="warning"></ion-icon>
             Season: {{ death.season }}
             </ion-item>
             <ion-item color="dark">
-              <ion-icon name="skull-outline" slot="start"></ion-icon>
+              <ion-icon name="play-outline" slot="start" color="warning"></ion-icon>
               Episode: {{ death.episode }}
               </ion-item>
               <ion-item color="dark">
-                <ion-icon name="skull-outline" slot="start"></ion-icon>
+                <ion-icon name="receipt-outline" slot="start" color="warning"></ion-icon>
                 Number of deaths: {{ death.number_of_deaths }}
                 </ion-item>
   </ion-card>
